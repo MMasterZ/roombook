@@ -40,18 +40,8 @@
 
     <script>
     $(document).ready(function() {
-        // <?php 
-        // if($_GET['error'] == 1)
-        // {
-        // ?>
-
-        // <?php
-        // } ?>
-
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        console.log(urlParams.get('error'));
-
         if (urlParams.get('error') == 1) {
             swal({
                 title: "ล้มเหลว",
