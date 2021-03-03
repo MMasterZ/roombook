@@ -25,7 +25,6 @@
 
   <?php  include('nav_bar.php');?>
 
-
   <div class="container">
     <!--Carousel Wrapper-->
     <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
@@ -126,19 +125,19 @@
 
 
 
-    <!-- FOOTER -->
-    <?php include("footer.php"); ?>
+  <!-- FOOTER -->
+  <?php include("footer.php"); ?>
 
-    <!-- jQuery -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Your custom scripts (optional) -->
-    <script type="text/javascript"></script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
 </body>
 
 </html>
