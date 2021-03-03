@@ -6,3 +6,30 @@ body {
 .brx {
   border: 1px solid#f00;
 }
+
+.btn-action {
+  border: 0px solid transparent;
+  transition: 0.2s;
+  transform: scale(1);
+}
+
+.btn-action:active {
+  border: 0px solid transparent;
+  transition: 0.2s;
+  transform: scale(0.95);
+}
+
+.btn-action:focus {
+  border: 0px solid transparent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+tr,
+td {
+  border: 1px solid;
+}
