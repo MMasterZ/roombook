@@ -22,8 +22,15 @@
 
 <body>
 
+
     <!-- NAV BAR -->
     <?php include('nav_bar.php'); ?>
+
+    <!-- BODY -->
+    <div style="height:calc(100vh - 244px)"></div>
+
+    <!-- FOOTER -->
+    <?php include("footer.php"); ?>
 
 </body>
 
