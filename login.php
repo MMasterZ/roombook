@@ -20,8 +20,6 @@
 
 </head>
 
-<!-- NAV BAR -->
-<?php include('nav_bar.php'); ?>
 
 <!-- jQuery -->
 <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -39,8 +37,8 @@
     <html>
 
 
+    <!-- NAV BAR -->
     <?php include('nav_bar.php'); ?>
-
     <div class="container">
         <div class="alert alert-success" role="alert">
             <h4>เข้าสู่ระบบ</h4>
@@ -92,51 +90,11 @@
                         </div>
                     </div>
                 </div>
-              </div>
             </div>
         </div>
     </div>
 
-    <?php  include("footer.php"); ?>
-
-                    <li>
-                      <a href="index.php">ห้องพัก</a>
-                    </li>
-                    <li>
-                      <a href="booking.php" target="_blank">จองห้องพัก</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                  <!-- Links -->
-                  <h5 class="text-uppercase">Links</h5>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a href="contact.php">ติดต่อสอบถาม</a>
-                    </li>
-                    <li>
-                      <a href="login.php">เข้าสู่ระบบ</a>
-                    </li>
-                    <li>
-                      <a href="person.php" target="_blank">ผู้จัดทำ</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- Grid column -->
-              </div>
-              <!-- Grid row -->
-            </div>
-            <!-- Footer Links -->
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Copyright:
-              <a href="https://mdbootstrap.com/"> MDBootstrap.com || Modifiled by devbanban.com</a>
-            </div>
-            <!-- Copyright -->
-          </footer>
-          <!-- Footer -->
-        </div>
+    <?php include("footer.php"); ?>
 
     </html>
 </body>

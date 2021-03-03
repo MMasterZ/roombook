@@ -189,7 +189,7 @@
                                     Username :
                                 </div>
                                 <div class="col-sm-2 col-md-6">
-                                    <input type="text" name="username" required class="form-control"
+                                    <input type="text" autocomplete="off" name="username" required class="form-control"
                                         placeholder="ภาษาอังกฤษหรือตัวเลข">
                                 </div>
                             </div>
@@ -198,8 +198,8 @@
                                     Password :
                                 </div>
                                 <div class="col-sm-2 col-md-6">
-                                    <input type="password" name="password" required class="form-control"
-                                        placeholder="อย่างน้อย 8 ตัว">
+                                    <input type="password" autocomplete="off" name="password" required
+                                        class="form-control" placeholder="อย่างน้อย 8 ตัว">
                                 </div>
                             </div>
 
@@ -210,8 +210,8 @@
                                             <label class="input-group-text" for="inputGroupSelect01">สถานะ</label>
                                         </div>
                                         <select class="custom-select" name="role" id="inputGroupSelect01" required>
-                                            <option selected>-เลือกข้อมูล-</option>
-                                            <option value="1">admin</option>
+
+                                            <option selected value="1">admin</option>
                                             <option value="2">member</option>
                                         </select>
                                     </div>
