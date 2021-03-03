@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en"><!-- InstanceBegin template="/Templates/templates.dwt.php" codeOutsideHTMLIsLocked="false" -->
 	<head>
 		<meta charset="UTF-8">

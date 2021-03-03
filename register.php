@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -154,7 +154,7 @@
 					<div class="view overlay">
                     <br>
                     <html>
-<!DOCTYPE html>
+
 <html>
 <head>
 	<title>Form FreeTemplate by.devtai.com</title>
