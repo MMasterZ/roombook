@@ -11,7 +11,7 @@ $checkLogin = $db -> select("user","*",
 
 
 if(count($checkLogin)){
-    header("location:../admin.php");
+    header("location:../admin.php?menu=1");
 }else{
     header("location:../admin_login.php");
 }
