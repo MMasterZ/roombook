@@ -28,9 +28,6 @@
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-
-
-
                     <!-- Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
