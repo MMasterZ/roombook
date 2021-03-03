@@ -21,7 +21,7 @@ use Medoo\Medoo;
 $db = new Medoo([
 	// required
 	'database_type' => 'mysql',
-	'database_name' => 'hotel',
+	'database_name' => 'test',
 	'server' => 'localhost',
 	'username' => 'root',
     'password' => '',

@@ -54,7 +54,7 @@
                                 <a href="login.php">เข้าสู่ระบบ</a>
                             </li>
                             <li>
-                                <a href="person.php" target="_blank">ผู้จัดทำ</a>
+                                <a href="developer.php">ผู้จัดทำ</a>
                             </li>
                         </ul>
                     </div>
