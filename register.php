@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/mdb.min.css">
     <!-- Your custom styles (optional) -->
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 
 
@@ -34,7 +34,41 @@
 <script type="text/javascript"></script>
 
 
+
+
 <body>
+
+    <script>
+    $(document).ready(function() {
+        // <?php 
+        // if($_GET['error'] == 1)
+        // {
+        // ?>
+
+        // <?php
+        // } ?>
+
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        console.log(urlParams.get('error'));
+
+        if (urlParams.get('error') == 1) {
+            swal({
+                title: "ล้มเหลว",
+                text: "รหัสผู้ใช้งานซ้ำ กรุณาลองใหม่อีกครั้ง",
+                icon: "error",
+            })
+        } else if (urlParams.get('success') == 1) {
+            swal({
+                title: "สำเร็จ",
+                text: "สมัครสมาชิกสำเร็จ",
+                icon: "success",
+            })
+        }
+
+
+    })
+    </script>
     <html>
     <?php include('nav_bar.php'); ?>
 
@@ -111,7 +145,6 @@
             <div class="card mb-4">
                 <!--Card image-->
                 <div class="" align="center">
-
                     <form action="api/register.php" method="post" class="form-horizontal" id="add">
                         <div class="form-group">
                             <div class="form-group">
@@ -119,7 +152,7 @@
                                     ชื่อ-นามสกุล :
                                 </div>
                                 <div class="col-sm-3 col-md-6">
-                                    <input type="text" name="" required class="form-control"
+                                    <input type="text" name="name" required class="form-control"
                                         placeholder="ภาษาไทยหรืออังกฤษ">
                                 </div>
                             </div>
@@ -128,7 +161,7 @@
                                     ที่อยู่ :
                                 </div>
                                 <div class="col-sm-3 col-md-6">
-                                    <input type="text" name="" required class="form-control"
+                                    <input type="text" name="address" required class="form-control"
                                         placeholder="ภาษาไทยหรืออังกฤษ">
                                 </div>
                             </div>
@@ -137,7 +170,7 @@
                                     เบอร์โทร :
                                 </div>
                                 <div class="col-sm-3 col-md-6">
-                                    <input type="text" name="" required class="form-control"
+                                    <input type="text" name="tel" required class="form-control"
                                         placeholder="เช่น 091 999 9999">
                                 </div>
                             </div>
@@ -146,7 +179,7 @@
                                     อีเมล์ :
                                 </div>
                                 <div class="col-sm-3 col-md-6">
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    <input type="email" name="email" class="form-control" id="exampleFormControlInput1"
                                         placeholder="name@example.com">
                                 </div>
                             </div>
@@ -156,7 +189,7 @@
                                     Username :
                                 </div>
                                 <div class="col-sm-2 col-md-6">
-                                    <input type="text" name="" required class="form-control"
+                                    <input type="text" name="username" required class="form-control"
                                         placeholder="ภาษาอังกฤษหรือตัวเลข">
                                 </div>
                             </div>
@@ -165,7 +198,7 @@
                                     Password :
                                 </div>
                                 <div class="col-sm-2 col-md-6">
-                                    <input type="password" name="" required class="form-control"
+                                    <input type="password" name="password" required class="form-control"
                                         placeholder="อย่างน้อย 8 ตัว">
                                 </div>
                             </div>
@@ -176,7 +209,7 @@
                                         <div class="input-group-prepend">
                                             <label class="input-group-text" for="inputGroupSelect01">สถานะ</label>
                                         </div>
-                                        <select class="custom-select" id="inputGroupSelect01" required>
+                                        <select class="custom-select" name="role" id="inputGroupSelect01" required>
                                             <option selected>-เลือกข้อมูล-</option>
                                             <option value="1">admin</option>
                                             <option value="2">member</option>
@@ -185,12 +218,14 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-3">
-                                    <button type="submit" class="btn btn-primary">สมัครสมาชิก</button>
-                                    <button type="" class="btn btn-danger">ยกเลิก</button>
+                                <div class="col-md-6">
+                                    <button style='width:150px' type="submit"
+                                        class="btn btn-primary">สมัครสมาชิก</button>
+                                    <button style='width:150px' type="" class="btn btn-danger">ยกเลิก</button>
                                 </div>
                             </div>
                         </div>
+                    </form>
                 </div>
             </div>
         </div>
