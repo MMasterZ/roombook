@@ -56,7 +56,7 @@ $(document).ready(function() {
                 </div>
 
             </div>
-            <div class="col brx" align="center">
+            <div class="col " align="center">
                 <?php
 if($_GET['menu'] == 1)
 {
