@@ -20,7 +20,22 @@
 
 </head>
 
+
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<!-- Your custom scripts (optional) -->
+<script type="text/javascript"></script>
+
+
 <body>
+    <html>
     <?php include('nav_bar.php'); ?>
 
     <div class="container">
@@ -85,9 +100,6 @@
         </div>
         <!--/.Carousel Wrapper-->
     </div>
-
-
-
     <div class="container">
         <br>
         <div class="alert alert-success" role="alert">
@@ -98,220 +110,95 @@
             <!-- Card -->
             <div class="card mb-4">
                 <!--Card image-->
-                <div class="">
+                <div class="" align="center">
 
-                    <form action="#" method="post" name="add" class="form-horizontal" id="add">
-                        <h1></h1>
+                    <form action="api/register.php" method="post" class="form-horizontal" id="add">
                         <div class="form-group">
-                            <div class="col-sm-2 control-label">
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-
-                                    </div>
+                            <div class="form-group">
+                                <div class="col-sm-2 col-md-6 control-label" align="left">
+                                    ชื่อ-นามสกุล :
+                                </div>
+                                <div class="col-sm-3 col-md-6">
+                                    <input type="text" name="" required class="form-control"
+                                        placeholder="ภาษาไทยหรืออังกฤษ">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2 col-md-6 control-label" align="left">
+                                    ที่อยู่ :
+                                </div>
+                                <div class="col-sm-3 col-md-6">
+                                    <input type="text" name="" required class="form-control"
+                                        placeholder="ภาษาไทยหรืออังกฤษ">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2 col-md-6 control-label" align="left">
+                                    เบอร์โทร :
+                                </div>
+                                <div class="col-sm-3 col-md-6">
+                                    <input type="text" name="" required class="form-control"
+                                        placeholder="เช่น 091 999 9999">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2 col-md-6 control-label" align="left">
+                                    อีเมล์ :
+                                </div>
+                                <div class="col-sm-3 col-md-6">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
                                 </div>
                             </div>
 
-                            <head>
-                                <title>Form FreeTemplate by.devtai.com</title>
-                                <link rel="stylesheet"
-                                    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-                                    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-                                    crossorigin="anonymous">
-                            </head>
+                            <div class="form-group">
+                                <div class="col-sm-2 col-md-6 control-label" align="left">
+                                    Username :
+                                </div>
+                                <div class="col-sm-2 col-md-6">
+                                    <input type="text" name="" required class="form-control"
+                                        placeholder="ภาษาอังกฤษหรือตัวเลข">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2 col-md-6 control-label" class="form-control" align="left">
+                                    Password :
+                                </div>
+                                <div class="col-sm-2 col-md-6">
+                                    <input type="password" name="" required class="form-control"
+                                        placeholder="อย่างน้อย 8 ตัว">
+                                </div>
+                            </div>
 
-                            <body>
-                                <form action="#" method="post" name="add" class="form-horizontal" id="add">
-                                    <h1></h1>
-                                    <div class="form-group">
-                                        <div class="col-sm-2 col-md-6 control-label">
-                                            <div class="input-group mb-3">
-                                                <div class="input-group-prepend">
-
-                                                </div>
-                                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2 col-md-6 control-label">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <label class="input-group-text" for="inputGroupSelect01">สถานะ</label>
                                         </div>
-
-                                        <div class="form-group">
-                                            <div class="col-sm-2 col-md-6 control-label">
-                                                ชื่อ-นามสกุล :
-                                            </div>
-                                            <div class="col-sm-3 col-md-6">
-                                                <input type="text" name="" required class="form-control"
-                                                    placeholder="ภาษาไทยหรืออังกฤษ">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-2 col-md-6 control-label">
-                                                ที่อยู่ :
-                                            </div>
-                                            <div class="col-sm-3 col-md-6">
-                                                <input type="text" name="" required class="form-control"
-                                                    placeholder="ภาษาไทยหรืออังกฤษ">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-2 col-md-6 control-label">
-                                                เบอร์โทร :
-                                            </div>
-                                            <div class="col-sm-3 col-md-6">
-                                                <input type="text" name="" required class="form-control"
-                                                    placeholder="เช่น 091 999 9999">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-2 col-md-6 control-label">
-                                                อีเมล์ :
-                                            </div>
-                                            <div class="col-sm-3 col-md-6">
-                                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                                    placeholder="name@example.com">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-sm-2 col-md-6 control-label">
-                                                Username :
-                                            </div>
-                                            <div class="col-sm-2 col-md-6">
-                                                <input type="text" name="" required class="form-control"
-                                                    placeholder="ภาษาอังกฤษหรือตัวเลข">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-2 col-md-6 control-label" class="form-control">
-                                                Password :
-                                            </div>
-                                            <div class="col-sm-2 col-md-6">
-                                                <input type="password" name="" required class="form-control"
-                                                    placeholder="อย่างน้อย 8 ตัว">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-sm-2 col-md-6 control-label">
-                                                <div class="input-group mb-3">
-                                                    <div class="input-group-prepend">
-                                                        <label class="input-group-text"
-                                                            for="inputGroupSelect01">สถานะ</label>
-                                                    </div>
-                                                    <select class="custom-select" id="inputGroupSelect01" required>
-                                                        <option selected>-เลือกข้อมูล-</option>
-                                                        <option value="1">admin</option>
-                                                        <option value="2">member</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="col-sm-3">
-
-
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="col-sm-2">
-                                            </div>
-                                            <div class="col-sm-3">
-                                                <button type="submit" class="btn btn-primary">สมัครสมาชิก</button>
-                                                <button type="" class="btn btn-danger">ยกเลิก</button>
-                                            </div>
-                                        </div>
-
-                                </form>
-
-</html>
-
-</div>
-
-<!--Card content-->
-<div class="card-body">
-    <!--Title-->
-
-
-</div>
-</div>
-<!-- Card -->
-
-</div>
-<!-- Card deck -->
-</div>
-
-
-
-
-
-<div class="container">
-    <!-- Footer -->
-    <footer class="page-footer font-small blue pt-4">
-        <!-- Footer Links -->
-        <div class="container-fluid text-center text-md-left">
-            <!-- Grid row -->
-            <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <!-- Content -->
-                    <h5 class="text-uppercase">บ้านดินถิ่นวาปี</h5>
-                    <p>140 หมู่ 3 แยกหนองคูม่วง ต. หนองแสง เทศบาลเมืองมหาสารคาม 44120</p>
+                                        <select class="custom-select" id="inputGroupSelect01" required>
+                                            <option selected>-เลือกข้อมูล-</option>
+                                            <option value="1">admin</option>
+                                            <option value="2">member</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-3">
+                                    <button type="submit" class="btn btn-primary">สมัครสมาชิก</button>
+                                    <button type="" class="btn btn-danger">ยกเลิก</button>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-                <!-- Grid column -->
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-                    <ul class="list-unstyled">
-                        <li>หน้าหลัก</li>
-
-                        <li>
-                            <a href="index.php">ห้องพัก</a>
-                        </li>
-                        <li>
-                            <a href="booking.php" target="_blank">จองห้องพัก</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
-                <!-- Grid column -->
-                <div class="col-md-3 mb-md-0 mb-3">
-                    <!-- Links -->
-                    <h5 class="text-uppercase">Links</h5>
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="contact.php">ติดต่อสอบถาม</a>
-                        </li>
-                        <li>
-                            <a href="login.php">เข้าสู่ระบบ</a>
-                        </li>
-                        <li>
-                            <a href="person.php" target="_blank">ผู้จัดทำ</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Grid column -->
             </div>
-            <!-- Grid row -->
         </div>
-        <!-- Footer Links -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> MDBootstrap.com || Modifiled by devbanban.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-    <!-- Footer -->
-</div>
+        <!-- FOOTER -->
+        <?php include("footer.php"); ?>
 
-<!-- jQuery -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<!-- Your custom scripts (optional) -->
-<script type="text/javascript"></script>
+    </html>
+
 </body>
 
 </html>
