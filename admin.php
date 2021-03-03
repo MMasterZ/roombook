@@ -19,9 +19,9 @@
     <!-- LAYOUT -->
     <div class="">
         <div class="row align-items-start">
-            <div class="" style='width:320px;background-color:black;height:95vh;color:white'>
+            <div class="" style='width:320px;background-color:black;height:99vh;color:white'>
                 <div align="center">
-                    Admin Menu
+                    Admin Menu xx
                 </div>
                 <br>
                 <div style='padding:10px'>
