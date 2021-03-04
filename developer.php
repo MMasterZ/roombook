@@ -30,7 +30,7 @@
 
             <div style="padding:10px">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://i.ytimg.com/vi/8zAvYTmLLbw/maxresdefault.jpg" class="card-img-top">
+                    <img style="height:280px" src="img/img1.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">พลอยไพลินทร์ ตั้งประภาพร</h5>
                         <p class="card-text">ตำแหน่ง : ออกแบบ UX / UI</p>
@@ -40,7 +40,7 @@
 
             <div style="padding:10px">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://i.ytimg.com/vi/8zAvYTmLLbw/maxresdefault.jpg" class="card-img-top">
+                    <img style="height:280px" src="img/img2.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">พลอยไพลินทร์ ตั้งประภาพร</h5>
                         <p class="card-text">ตำแหน่ง : พัฒนาส่วน Admin</p>
@@ -48,15 +48,7 @@
                 </div>
             </div>
 
-            <div style="padding:10px">
-                <div class="card" style="width: 18rem;">
-                    <img src="https://i.ytimg.com/vi/8zAvYTmLLbw/maxresdefault.jpg" class="card-img-top">
-                    <div class="card-body">
-                        <h5 class="card-title">พลอยไพลินทร์ ตั้งประภาพร</h5>
-                        <p class="card-text">ตำแหน่ง : พัฒนาส่วนหน้าหลัก</p>
-                    </div>
-                </div>
-            </div>
+          
         </div>
 
 
