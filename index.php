@@ -34,7 +34,6 @@
     <div class="alert alert-success" role="alert">
       <span class="h4" style="color:green"> ยินดีต้อนรับ </span>
       <span><?php echo $_SESSION['user_data']; ?></span>
-
     </div>
     <?php } ?>
     <!-- Card deck -->
@@ -76,6 +75,7 @@
       </div>
     </div>
   </div>
+  <br>
 
 
   <!-- FOOTER -->
