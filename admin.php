@@ -10,11 +10,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <title>Document</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>บ้านดินถิ่นวาปี</title>
 </head>
 <script>
 $(document).ready(function() {
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+
+
+    const getParams = urlParams.get("menu")
+
+
+
+
+    if (getParams == 1) {
+        $("#user_info").addClass("active")
+    } else if (getParams == 2) {
+        $("#room_status").addClass("active")
+    } else if (getParams == 3) {
+        $("#manage_room").addClass("active")
+
+    }
+
     $("#user_info").click(function() {
         window.location.href = "/roombook/admin.php?menu=1"
     })
