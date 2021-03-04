@@ -38,9 +38,6 @@ $(document).ready(function() {
                 </div>
                 <br>
                 <div style='padding:10px'>
-                    <div>
-
-                    </div>
                 </div>
                 <div style='padding:10px'>
                     <button id="user_info" type="button" class="btn btn-outline-secondary"
@@ -48,7 +45,7 @@ $(document).ready(function() {
                 </div>
                 <div style='padding:10px'>
                     <button id="room_status" type="button" class="btn btn-outline-secondary"
-                        style='width:100%'>ตรวจสอบสถานะห้องพัก</button>
+                        style='width:100%'>ตรวจสอบการจองห้องพัก</button>
                 </div>
                 <div style='padding:10px'>
                     <button id="manage_room" type="button" class="btn btn-outline-secondary"
