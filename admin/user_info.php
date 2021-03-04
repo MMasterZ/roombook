@@ -23,6 +23,13 @@ $(document).ready(function() {
                 }
             });
     })
+
+    $(".edit-btn").click(function() {
+        const item = $(this).attr("data-item")
+        console.log(item[1]);
+
+
+    })
 })
 </script>
 
@@ -30,6 +37,7 @@ $(document).ready(function() {
 
     <div class="container p-5">
         <div class='card p-3' style='min-height:85vh;'>
+
             <div class='h3 p-2'>
                 ข้อมูลลูกค้า
             </div>
@@ -51,6 +59,8 @@ $(document).ready(function() {
                 <tr>
 
                     <td>
+
+
                         <?php echo $item['name'];  ?>
                     </td>
                     <td>
@@ -69,7 +79,7 @@ $(document).ready(function() {
                         <span class='delete-btn icon-cursor fas fa-trash-alt' item="<?php echo $item['id'];  ?>"></span>
                     </td>
                     <td>
-                        <span class='edit-btn icon-cursor fas fa-pen-alt'></span>
+                        <span data-item="<?php print_r($item); ?>" class='edit-btn icon-cursor fas fa-pen-alt'></span>
                     </td>
                 </tr>
                 <?php } ?>
