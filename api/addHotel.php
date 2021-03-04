@@ -1,22 +1,21 @@
 <?php 
 include_once("../Connections/conn.php");
 
-echo $_POST["files"];
+$fname = $_FILES['files']['tmp_name'];
 
-$file_name = "img/";
+$real_name = $_FILES['files']['name'];
 
-$file = fopen($file_name , 'w') or die("X_x");
+$uploads_dir = "../img";
 
-fwrite($file, $_POST['files']);
+move_uploaded_file($fname, "$uploads_dir/$real_name");
 
-// $db -> insert("hotel", [
-// 	"files" => $_POST["files"],
-// 	"name" => $_POST["name"],
-// 	"details" => $_POST["details"],
-//   "price" => $_POST["price"]
-// ]);
+$db -> insert('hotel',[
+    "name" => $_POST['name'],
+    "details" => $_POST['details'],
+    "price" => $_POST["price"],
+    "files" => "$real_name"
+]);
 
-
-// header("location:/roombook/admin.php");
+header("location:/roombook/admin.php?menu=3");
 
 ?>
