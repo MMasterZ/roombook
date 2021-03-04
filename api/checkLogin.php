@@ -19,9 +19,4 @@ if(count($result)){
 }else{
   header("location:/roombook/login.php");
 }
-
-  session_write_close();
-
-
-
 ?>
