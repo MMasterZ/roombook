@@ -21,4 +21,6 @@ $db = new Medoo([
     "charset" => "utf8",
 ]);
 
+$mysqli = new mysqli("localhost","root","","hotel");
+
 ?>
