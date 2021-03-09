@@ -14,7 +14,7 @@
           </a>
         </li>
         <li class="nav-item px-1">
-          <a class="nav-link <?php if($pages == "booking"){ echo "active"; } ?> href=" room_booking.php">จองห้องพัก</a>
+          <a class="nav-link <?php if($pages == "booking"){ echo "active"; } ?>" href="room_booking.php">จองห้องพัก</a>
         </li>
         <li class="nav-item px-1">
           <a class="nav-link <?php if($pages == "contact"){ echo "active"; } ?>" href="contact.php">ติดต่อสอบถาม</a>

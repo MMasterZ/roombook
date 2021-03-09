@@ -2,11 +2,10 @@
 session_start();
 $pages = "contact";
 include("header.php");
-
+include("nav_bar.php");
+include("slideShow.php");
 ?>
 
-<?php include("nav_bar.php"); ?>
-<?php include("slideShow.php"); ?>
 <div class="container">
   <br>
   <div class="alert alert-success" role="alert">
