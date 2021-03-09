@@ -226,15 +226,16 @@ $(document).ready(function() {
 </div>
 
 <div class="container">
-  <div class="card p-3" style="height:calc(100vh - 226px);">
+
+  <div class="card p-3" style="min-height:calc(100vh - 226px);border-radius:0px;">
     <div class="pt-4 pb-1">
       <h3 class="text-center text-info">จองห้องพัก</h3>
     </div>
     <?php  
-            include("api/getHotel.php");
-            foreach($result as $item)
-            {  ?>
-    <div class="mt-3">
+    include("api/getHotel.php");
+    foreach($result as $item)
+    {  ?>
+    <div class="mt-3 ">
       <table>
         <tr>
           <td>
