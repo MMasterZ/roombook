@@ -13,13 +13,13 @@ use Medoo\Medoo;
 $db = new Medoo([
 	// required
 	'database_type' => 'mysql',
-	'database_name' => 'test',
+	'database_name' => 'hotel',
 	'server' => 'localhost',
 	'username' => 'root',
     'password' => '',
     "charset" => "utf8",
 ]);
 
-$mysqli = new mysqli("localhost","root","","test");
+$mysqli = new mysqli("localhost","root","","hotel");
 
 ?>
