@@ -7,7 +7,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-    <div class=" collapse navbar-collapse" id="basicExampleNav" style="padding:15px 15px;">
+    <div class="collapse navbar-collapse" id="basicExampleNav" style="padding:15px 15px;">
       <ul class="navbar-nav">
         <li class="nav-item px-1">
           <a class="nav-link <?php if($pages == "home"){ echo "active"; } ?>" href="index.php">หน้าหลัก
@@ -33,12 +33,70 @@
         ?>
       </ul>
     </div>
+    <?php
+      if(isset($_SESSION['user_data'])){
+    ?>
+    <div style="position:relative;">
+      <a href="#" class="text-white" style="text-decoration:none;">
+        <span class="fas fa-user " style="font-size:28px;"></span>
+        <span class="mx-1"><?php echo $_SESSION['user_data'] ?></span>
+      </a>
+
+      <div class="menu" align="left">
+        <a class="" href="#" style="text-decoration:none;">
+          <div class="btn-menu p-2">
+            รายละเอียดการจอง
+          </div>
+        </a>
+        <a class="" href="#" style="text-decoration:none;">
+          <div class="btn-menu p-2">
+            ออกจากระบบ
+          </div>
+        </a>
+      </div>
+    </div>
+    <?php
+      }
+    ?>
   </nav>
 </div>
 
 <style>
+a {
+  color: transaparent;
+}
+
 .nav-link.active {
   background-color: white;
   color: #4285F4 !important;
+}
+
+.menu {
+  display: block;
+  position: absolute;
+  top: 130%;
+  right: 0;
+  width: 150px;
+  word-break: break-all;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, .47);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.btn-menu {
+  color: #4285F4;
+}
+
+.btn-menu:hover {
+  cursor: pointer;
+  background-color: #4285F4;
+  color: #fff !important;
+}
+
+.btn-menu:active {
+  background-color: #4285F4a5;
+  transition: .2s
 }
 </style>

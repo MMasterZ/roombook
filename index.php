@@ -7,7 +7,6 @@ include("slideShow.php");
 ?>
 
 <div class="container">
-
   <?php if(isset($_SESSION['user_data'])){ ?>
   <div class="alert alert-success" role="alert">
     <span class="h4" style="color:green"> ยินดีต้อนรับ </span>
@@ -23,10 +22,8 @@ include("slideShow.php");
             บ้านดินถิ่นวาปี รีสอร์ท (Wapi Pathum Earthen House Resort)
           </p>
           <br />
-
           <br>
           <p>
-
             <span class="h5"> รายละอียดรีสอร์ท :</span> บ้านดินถิ่นวาปี รีสอร์ท ตั้งอยู่ในวาปีปทุม ใช้เวลาเดินทางเพียง
             5
             นาทีจากข่นส่ง มีบริการอินเทอร์เน็ตไร้สาย
