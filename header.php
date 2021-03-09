@@ -38,6 +38,10 @@
     font-family: myItim;
   }
 
+  .container {
+    overflow: hidden;
+  }
+
   input {
     padding: 22px 15px !important;
     border: 1px solid #CFD8DC !important;
