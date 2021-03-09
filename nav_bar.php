@@ -37,18 +37,18 @@
       if(isset($_SESSION['user_data'])){
     ?>
     <div style="position:relative;">
-      <a href="#" class="text-white" style="text-decoration:none;">
+      <a href="#" class="text-white" id="userMenu" style="text-decoration:none;">
         <span class="fas fa-user " style="font-size:28px;"></span>
         <span class="mx-1"><?php echo $_SESSION['user_data'] ?></span>
       </a>
 
-      <div class="menu" align="left">
-        <a class="" href="#" style="text-decoration:none;">
+      <div class="menu animated fadeInRight" id="menuDropdown" align="left" style='display:none'>
+        <a class="" href="user_booking.php" style="text-decoration:none;">
           <div class="btn-menu p-2">
             รายละเอียดการจอง
           </div>
         </a>
-        <a class="" href="#" style="text-decoration:none;">
+        <a class="" href="logout.php" style="text-decoration:none;">
           <div class="btn-menu p-2">
             ออกจากระบบ
           </div>
@@ -100,3 +100,11 @@ a {
   transition: .2s
 }
 </style>
+<script>
+$(document).ready(function(){
+  $("#userMenu").click(function(){
+    $("#menuDropdown").toggle()
+
+  })
+})
+</script>

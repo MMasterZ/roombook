@@ -21,7 +21,7 @@ function generateRandomString($length = 10) {
     $uploads_dir = "../payment_document";
     move_uploaded_file($fname, "$uploads_dir/$real_name");
 
-    $sql_update = "insert into booking_log (user_id,check_in_date,check_out_date,room_type,name,surname,tel,email,payment_file) values('$user_id','$check_in','$check_out','$room_type','$name','$surname','$tel','$email','$real_name')";
+    $sql_update = "insert into booking_log (user_id,check_in_date,check_out_date,room_type,name,surname,tel,email,payment_file,status) values('$user_id','$check_in','$check_out','$room_type','$name','$surname','$tel','$email','$real_name',0)";
     $result = $mysqli -> query($sql_update);
     echo $sql_update;
 ?>

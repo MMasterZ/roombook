@@ -1,6 +1,5 @@
 <?php 
 date_default_timezone_set("Asia/Bangkok");
-
 error_reporting(-1);
 ini_set('display_errors', 'On');
 
@@ -14,13 +13,13 @@ use Medoo\Medoo;
 $db = new Medoo([
 	// required
 	'database_type' => 'mysql',
-	'database_name' => 'hotel',
+	'database_name' => 'test',
 	'server' => 'localhost',
 	'username' => 'root',
     'password' => '',
     "charset" => "utf8",
 ]);
 
-$mysqli = new mysqli("localhost","root","","hotel");
+$mysqli = new mysqli("localhost","root","","test");
 
 ?>
