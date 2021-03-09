@@ -118,7 +118,7 @@ $(document).ready(function() {
     });
 
 
-    $("#check-login").click(function() {
+    $(".check-login").click(function() {
         <?php if(!isset($_SESSION['user_data']))
     { ?>
        swal({
@@ -135,7 +135,7 @@ $(document).ready(function() {
       });
        
         <?php  }else{ ?>
-        $("#booking-room").click()
+        $(".booking-room").click()
         <?php }  ?>
     })
 
@@ -290,10 +290,10 @@ $(document).ready(function() {
                             </div>
                         </div>
                         <div align='center' style="width:150px;padding:15px;">
-                            <button id="check-login" class="btn-action btn-booking text-white"
+                            <button  class="check-login btn-action btn-booking text-white"
                                 style="width:100px;background-color:green;border:0px solid;padding:5px;">จองห้องพัก</button>
 
-                            <button id="booking-room" style='display:none' data-bs-toggle="modal"
+                            <button class="booking-room" style='display:none' data-bs-toggle="modal"
                                 data-bs-target="#bookingDialog" item="<?php echo $item['id']; ?>"
                                 class="btn-action btn-booking text-white"
                                 style="width:100px;background-color:green;border:0px solid;padding:5px;">จองห้องพัก</button>
