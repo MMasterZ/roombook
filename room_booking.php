@@ -123,7 +123,6 @@ $(document).ready(function() {
 })
 </script>
 
-
 <!-- Modal จองห้องพัก -->
 <div class="modal fade" tabindex="-1" id="bookingDialog">
   <div class="modal-dialog">
@@ -226,20 +225,16 @@ $(document).ready(function() {
   </div>
 </div>
 
-
-
-<!-- NAV BAR -->
-<!-- BODY -->
 <div class="container">
-  <div class="card" style="height:calc(100vh - 226px)">
-    <div class="alert alert-success" role="alert">
-      <span class="h4"> จองห้องพัก </span>
+  <div class="card p-3" style="height:calc(100vh - 226px);">
+    <div class="pt-4 pb-1">
+      <h3 class="text-center text-info">จองห้องพัก</h3>
     </div>
     <?php  
             include("api/getHotel.php");
             foreach($result as $item)
             {  ?>
-    <div class="card" style="margin-top:15px;">
+    <div class="mt-3">
       <table>
         <tr>
           <td>
@@ -267,10 +262,12 @@ $(document).ready(function() {
           <td style="vertical-align: bottom;" align='center'>
             <div style="margin-top:5px;">
               <div style="width:100px;border:1px solid rgba(0,0,0,.2);padding:10px;">
-                <div style="font-size:12px;padding-bottom:5px;padding-left:5px;" align="left">
+                <div style="font-size:12px;padding-bottom:5px;padding-left:0px;" align="left">
                   ราคา
                 </div>
-                <span style="color:green;font-weight:bold;"><?php echo $item['price']; ?> บาท</span>
+                <div align="left">
+                  <span style="color:green;font-weight:bold;"><?php echo $item['price']; ?> บาท</span>
+                </div>
               </div>
             </div>
             <div align='center' style="width:150px;padding:15px;">
