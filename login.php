@@ -22,7 +22,9 @@ include('nav_bar.php');
                 <input type="text" name="password" id="password" class="form-control" required>
               </div>
               <div class="form-group p-3" align='center'>
-                <input type="submit" name="submit" class="btn btn-info btn-md" value="login">
+                <button type="submit" name="submit" style="width:200px;" class="btn btn-info">
+                  login
+                </button>
               </div>
               <div id="register-link" class="text-right" align='center'>
                 <a href="register.php" class="text-info">สมัครสมาชิก</a>
