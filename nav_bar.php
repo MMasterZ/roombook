@@ -1,58 +1,44 @@
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>บ้านดินถิ่นวาปี</title>
-</head>
-
-<body>
-  <div class="container">
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-      <!-- Navbar brand -->
-      <a class="navbar-brand" href="index.php">บ้านดินถิ่นวาปี</a>
-      <!-- Collapse button -->
+<div class="container">
+  <nav class=" navbar navbar-expand-lg navbar-dark primary-color " style="padding:0px 15px;">
+    <div>
+      <span class="navbar-brand" style="font-size:28px;">บ้านดินถิ่นวาปี</span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
         aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Collapsible content -->
-      <div class="collapse navbar-collapse" id="basicExampleNav">
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">หน้าหลัก
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="room_booking.php">จองห้องพัก</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.php">ติดต่อสอบถาม</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="developer.php">ผู้จัดทำ</a>
-          </li>
-
-          <?php 
+    </div>
+    <div class=" collapse navbar-collapse" id="basicExampleNav" style="padding:15px 15px;">
+      <ul class="navbar-nav">
+        <li class="nav-item px-1">
+          <a class="nav-link <?php if($pages == "home"){ echo "active"; } ?>" href="index.php">หน้าหลัก
+          </a>
+        </li>
+        <li class="nav-item px-1">
+          <a class="nav-link <?php if($pages == "booking"){ echo "active"; } ?> href=" room_booking.php">จองห้องพัก</a>
+        </li>
+        <li class="nav-item px-1">
+          <a class="nav-link <?php if($pages == "contact"){ echo "active"; } ?>" href="contact.php">ติดต่อสอบถาม</a>
+        </li>
+        <li class="nav-item px-1">
+          <a class="nav-link <?php if($pages == "developer"){ echo "active"; } ?>" href="developer.php">ผู้จัดทำ</a>
+        </li>
+        <?php 
             if(!isset($_SESSION['user_data'])){
             ?>
-          <li class="nav-item">
-            <a class="nav-link" href="login.php">เข้าสู่ระบบ</a>
-          </li>
-          <?php
-                    }
-                    ?>
-        </ul>
+        <li class="nav-item px-1">
+          <a class="nav-link  <?php if($pages == "login"){ echo "active"; } ?>" href="login.php">เข้าสู่ระบบ</a>
+        </li>
+        <?php
+          }
+        ?>
+      </ul>
+    </div>
+  </nav>
+</div>
 
-      </div>
-      <!-- Collapsible content -->
-    </nav>
-    <!--/.Navbar-->
-  </div>
-</body>
-
-</html>
+<style>
+.nav-link.active {
+  background-color: white;
+  color: #4285F4 !important;
+}
+</style>
