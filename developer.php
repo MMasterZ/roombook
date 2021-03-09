@@ -15,9 +15,9 @@ include("nav_bar.php");
         <div class="card" style="width: 18rem;">
           <img style="height:280px" src="img/img1.jpg" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">นส.พลอยไพลินทร์ ตั้งประภาพร</h5>
+            <h5 class="card-title">นางสาว อินทิรา แก้วธานี</h5>
             <hr>
-            <p class="card-text">ตำแหน่ง : ออกแบบ UX / UI</p>
+            <p class="card-text">ผู้จัดทำ</p>
           </div>
         </div>
       </div>
@@ -28,9 +28,9 @@ include("nav_bar.php");
         <div class="card" style="width: 18rem;">
           <img style="height:280px" src="img/img2.jpg" class="card-img-top">
           <div class="card-body">
-            <h5 class="card-title">นส.จารุวรรณ ตราไชย</h5>
+            <h5 class="card-title">นางสาว จารุวรรณ ตราไชย</h5>
             <hr>
-            <p class="card-text">ตำแหน่ง : พัฒนาส่วน Admin</p>
+            <p class="card-text">ผู้จัดทำ</p>
           </div>
         </div>
       </div>

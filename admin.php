@@ -56,9 +56,9 @@ $(document).ready(function() {
   <!-- LAYOUT -->
   <div class="">
     <div class="row align-items-start">
-      <div class="" style='width:320px;background-color:black;height:99vh;color:white'>
+      <div  style='width:320px;height:99vh;color:white;background-color:black;'>
         <div align="center">
-          Admin Menu xx
+          Admin Menu 
         </div>
         <br>
         <div style='padding:10px'>
@@ -102,6 +102,9 @@ if($_GET['menu'] == 1)
 
 .brx {
   border: 1px solid red
+}
+.bg-gradient{
+ background-image: linear-gradient(red, yellow);
 }
 </style>
 

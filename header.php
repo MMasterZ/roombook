@@ -36,6 +36,8 @@
 
   body {
     font-family: myItim;
+    background-image:url("./img/bg-repeat.jpg");
+    background-size:fit
   }
 
 
