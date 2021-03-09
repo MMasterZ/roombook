@@ -10,7 +10,6 @@ include("nav_bar.php");
     <div class="row justify-content-center py-5">
       <div class="col-12 pb-5 px-5">
         <h3 class="text-center text-info">ผู้จัดทำ</h3>
-        <!-- <hr> -->
       </div>
       <div class="col-4">
         <div class="card" style="width: 18rem;">

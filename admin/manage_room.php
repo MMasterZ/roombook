@@ -83,8 +83,46 @@
                 <span class="fas fa-edit"></span>
               </button>
             </td>
+            <td style="width:50px;vertical-align: center;" align='center'>
+              <button type="button" class="btn-outline-green text-white"
+                style="width:30px;height:30px;border-radius:50%;background-color:red;" data-bs-toggle="modal"
+                data-bs-target="<?php echo "#deleteModel".$row['id'] ?>"><span class="fas fa-trash"></span>
+              </button>
+            </td>
           </tr>
         </table>
+      </div>
+
+      <div class="modal fade" id="deleteModel<?php echo $row['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">ลบห้องพัก</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="api/deleteHotel.php" method="post">
+              <div class="modal-body">
+                <span>คุณต้องการที่จะลบห้องพักนี้หรือไม่?</span>
+
+                <div align="center" class="py-3">
+                  <img style="width:300px" src="<?php echo "img/".$row['files'] ?>" alt="">
+                </div>
+                <div align='center'>
+                  <span class="h6" style="font-weight:bold;"><?php echo $row['name'] ?></span>
+                  :
+                  <span>ราคา <?php echo $row["price"]." บาท" ?></span>
+                </div>
+
+              </div>
+              <div class="modal-footer" algin="center">
+                <input name="id" value="<?php echo $row['id'] ?>" style="display:none;">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                <input type="submit" name="submit" class="btn btn-info btn-md" value="ตกลง">
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
 
       <div class="modal fade" id="editModel<?php echo $row['id'] ?>" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -97,7 +135,6 @@
             </div>
             <form action="api/editHotel.php" method="post" enctype="multipart/form-data">
               <div class="modal-body">
-
                 <div class="row pb-2">
                   <div align="left" class="py-3">
                     <img style="width:300px" src="<?php echo "img/".$row['files'] ?>" alt="">
