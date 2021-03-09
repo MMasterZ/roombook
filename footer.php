@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container ">
   <footer class="page-footer font-small blue pt-4">
     <div class="container-fluid text-center text-md-left">
       <div class="row">
@@ -9,24 +9,24 @@
         <hr class="clearfix w-100 d-md-none pb-3">
         <div class="col-md-3 mb-md-0 mb-3">
           <ul class="list-unstyled">
-            <li>
-              <a href="index.php">หน้าหลัก</a>
+            <li class="py-1">
+              <a href="index.php" style="text-decoration:underline;">หน้าหลัก</a>
             </li>
-            <li>
-              <a href="booking.php">จองห้องพัก</a>
+            <li class="py-1">
+              <a href="booking.php" style="text-decoration:underline;">จองห้องพัก</a>
             </li>
           </ul>
         </div>
         <div class="col-md-3 mb-md-0 mb-3">
           <ul class="list-unstyled">
-            <li>
-              <a href="contact.php">ติดต่อสอบถาม</a>
+            <li class="py-1">
+              <a href="contact.php" style="text-decoration:underline;">ติดต่อสอบถาม</a>
             </li>
-            <li>
-              <a href="developer.php">ผู้จัดทำ</a>
+            <li class="py-1">
+              <a href="developer.php" style="text-decoration:underline;">ผู้จัดทำ</a>
             </li>
-            <li>
-              <a href="login.php">เข้าสู่ระบบ</a>
+            <li class="py-1">
+              <a href="login.php" style="text-decoration:underline;">เข้าสู่ระบบ</a>
             </li>
           </ul>
         </div>

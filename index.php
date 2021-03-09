@@ -8,13 +8,12 @@ include("slideShow.php");
 
 <div class="container">
   <?php if(isset($_SESSION['user_data'])){ ?>
-  <div class="alert alert-success" role="alert">
+  <!-- <div class="alert alert-success" role="alert">
     <span class="h4" style="color:green"> ยินดีต้อนรับ </span>
-    <span><?php echo $_SESSION['user_data']; ?></span>
-  </div>
+    <span></span>
+  </div> -->
   <?php } ?>
-  <!-- Card deck -->
-  <div class="card brx " style="height:500px;">
+  <div class="card brx py-3" style="min-height:50vh;border-radius:0px;">
     <div class="row justify-content-center p-3">
       <div class="col m-2 " align='center'>
         <div class="p-3" align="left">
@@ -43,29 +42,14 @@ include("slideShow.php");
             * รีสอร์ทกำหนดให้ต้องยกเลิกการจองก่อนเช็คอิน 24 ชั่วโมง
             โปรดดูรายละเอียดที่จองห้องพัก
           </p>
-
         </div>
       </div>
-
     </div>
   </div>
 </div>
 
 
-<!-- FOOTER -->
 <?php include("footer.php"); ?>
-
-
-<!-- jQuery -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
-<!-- Your custom scripts (optional) -->
-<script type="text/javascript"></script>
 </body>
 
 </html>

@@ -142,7 +142,6 @@ $(document).ready(function() {
 })
 </script>
 
-
 <!-- Modal จองห้องพัก -->
 <div class="modal fade" tabindex="-1" id="bookingDialog">
     <div class="modal-dialog">
@@ -247,10 +246,6 @@ $(document).ready(function() {
     </div>
 </div>
 
-
-
-<!-- NAV BAR -->
-<!-- BODY -->
 <div class="container">
     <div class="card" style="height:calc(100vh - 226px)">
         <div class="alert alert-success" role="alert">
