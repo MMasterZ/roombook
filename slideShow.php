@@ -12,7 +12,8 @@
 
   <div class="container">
     <!--Carousel Wrapper-->
-    <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+    <div id="carousel-example-2" class="carousel slide carousel-fade " style="background-color:#80aef7;"
+      data-ride="carousel">
       <!--Indicators-->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
@@ -24,24 +25,27 @@
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
           <div class="view">
-            <img class="d-block " style="width:100%;height:650px;" src="./img/1.jpg" alt="First slide">
-            <div class="mask rgba-black-light"></div>
+            <img class="d-block " style="width:100%;height:370px;object-fit:cover" src="./img/bg1.jpg"
+              alt="First slide">
+            <div class="mask "></div>
           </div>
 
         </div>
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img class="d-block " style="width:100%;height:650px;" src="./img/a2.jpg" alt="First slide">
-            <div class="mask rgba-black-strong"></div>
+            <img class="d-block " style="width:100%;height:370px;object-fit:cover" src="./img/bg2.jpg"
+              alt="First slide">
+            <div class="mask "></div>
           </div>
 
         </div>
         <div class="carousel-item">
           <!--Mask color-->
           <div class="view">
-            <img class="d-block " style="width:100%;height:650px;" src="./img/a3.jpg" alt="First slide">
-            <div class="mask rgba-black-slight"></div>
+            <img class="d-block " style="width:100%;height:370px;object-fit:cover" src="./img/bg3.jpg"
+              alt="First slide">
+            <div class="mask "></div>
           </div>
 
         </div>

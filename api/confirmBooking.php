@@ -16,12 +16,13 @@ function generateRandomString($length = 10) {
     $surname = $_POST['surname'];
     $tel = $_POST['tel'];
     $email = $_POST['email'];
+    $room_no = $_POST['room_no'];
     $fname = $_FILES['file']['tmp_name'];
     $real_name = $user_id . generateRandomString() . ".jpg";
     $uploads_dir = "../payment_document";
     move_uploaded_file($fname, "$uploads_dir/$real_name");
 
-    $sql_update = "insert into booking_log (user_id,check_in_date,check_out_date,room_type,name,surname,tel,email,payment_file,status) values('$user_id','$check_in','$check_out','$room_type','$name','$surname','$tel','$email','$real_name',0)";
+    $sql_update = "insert into booking_log (user_id,check_in_date,check_out_date,room_type,name,surname,tel,email,payment_file,status,room_no) values('$user_id','$check_in','$check_out','$room_type','$name','$surname','$tel','$email','$real_name',0,'$room_no')";
     $result = $mysqli -> query($sql_update);
     echo $sql_update;
 ?>

@@ -4,7 +4,8 @@ include('./Connections/conn.php');
 $pages = "booking";
 include("header.php");
 include('nav_bar.php');
- ?>
+
+?>
 
 <script>
 $(document).ready(function() {
@@ -17,11 +18,31 @@ $(document).ready(function() {
   var tel
   var roomType
   var email
+  var getRoom_no
 
   $(".btn-booking").click(function() {
     let item = $(this).attr('item')
     activeItem = item
     roomType = item
+
+    if (item == '1') {
+      $('#room1').show()
+      $("#room2").hide()
+      getRoom_no = "A-01"
+    } else {
+      $('#room1').hide()
+      $("#room2").show()
+
+      getRoom_no = "B-01"
+    }
+  })
+
+  $('#room1').change(function() {
+    getRoom_no = $(this).val()
+  })
+
+  $('#room2').change(function() {
+    getRoom_no = $(this).val()
   })
 
   $("#confirm-booking").click(function() {
@@ -44,6 +65,7 @@ $(document).ready(function() {
     formData.append("tel", tel)
     formData.append("email", email)
     formData.append("file", getFile)
+    formData.append("room_no", getRoom_no)
 
     let postData = {
       checkIn: checkInDate,
@@ -80,6 +102,8 @@ $(document).ready(function() {
           icon: "success",
         })
         $("#btn-close-modal").click()
+
+        alert(php_script_response)
       }
     });
   })
@@ -186,6 +210,28 @@ $(document).ready(function() {
                     class='form-control text-left'>
                 </div>
               </div>
+              <div class="col-12 pt-2">
+                <div><span>เลขห้อง</span></div>
+                <div class="input-group">
+                  <select name="room_no" id="room1" class='form-control text-left'>
+                    <option value="A-01">A-01</option>
+                    <option value="A-02">A-02</option>
+                    <option value="A-03">A-03</option>
+                    <option value="A-04">A-04</option>
+                    <option value="A-05">A-05</option>
+                  </select>
+                </div>
+
+                <div class="input-group">
+                  <select name="room_no" id="room2" class='form-control text-left'>
+                    <option value="B-01">B-01</option>
+                    <option value="B-02">B-02</option>
+                    <option value="B-03">B-03</option>
+                    <option value="B-04">B-04</option>
+                    <option value="B-05">B-05</option>
+                  </select>
+                </div>
+              </div>
             </div>
           </form>
         </div>
@@ -288,7 +334,7 @@ $(document).ready(function() {
               </div>
             </div>
             <div align='center' style="width:150px;padding:15px;">
-              <button class="check-login btn-action btn-booking text-white"
+              <button class="check-login btn-action btn-booking text-white" item="<?php echo $item['id']; ?>"
                 style="width:100px;background-color:green;border:0px solid;padding:5px;">จองห้องพัก</button>
 
               <button class="booking-room" style='display:none' data-bs-toggle="modal" data-bs-target="#bookingDialog"
